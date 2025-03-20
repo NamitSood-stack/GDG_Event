@@ -30,6 +30,31 @@ tabItems.forEach(item => {
     });
 });
 
+// Features Slider Functionality
+const featuresList = document.querySelector('.features-list');
+const featureItems = document.querySelectorAll('.feature-item');
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+
+let currentIndex = 0;
+const totalItems = featureItems.length;
+const itemWidth = 330; // Width of each feature item (300px + 30px gap)
+
+function updateSlider() {
+    const translateX = -currentIndex * itemWidth;
+    featuresList.style.transform = `translateX(${translateX}px)`;
+}
+
+leftArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+    updateSlider();
+});
+
+rightArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
+    updateSlider();
+});
+
 // Chatbot Functionality
 const chatbotToggle = document.querySelector('.chatbot-toggle');
 const chatbotWindow = document.querySelector('.chatbot-window');
@@ -173,7 +198,4 @@ chatbotInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         chatbotForm.dispatchEvent(new Event('submit'));
     }
-});
-document.getElementById('mobile-menu').addEventListener('click', function() {
-    document.querySelector('.nav-menu').classList.toggle('active');
 });
