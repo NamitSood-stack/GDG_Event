@@ -622,3 +622,41 @@ body {
         height: 400px;
     }
 }
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #181D24;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #181D24;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .nav-menu li a {
+        color: white;
+        font-size: 18px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
