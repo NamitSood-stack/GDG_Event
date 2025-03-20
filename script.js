@@ -199,3 +199,6 @@ chatbotInput.addEventListener('keypress', (e) => {
         chatbotForm.dispatchEvent(new Event('submit'));
     }
 });
+document.getElementById('mobile-menu').addEventListener('click', function() {
+    document.querySelector('.nav-menu').classList.toggle('active');
+});
