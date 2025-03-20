@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Reserve At choco</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container">
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#floor-plans">Floor Plans</a></li>
+            <li><a href="#features">Features</a></li>
+          </ul>
+          <div class="logo">
+            <a href="/">
+              <img
+                src="https://thereserveatochoco.com/wp-content/uploads/2023/03/1.png"
+                alt="The Reserve At Ochoco"
+              />
+            </a>
+          </div>
+          <div class="location">
+            <span class="icon">📍</span>
+            <span>Prineville, Oregon</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1>The Reserve <br />At Ochoco</h1>
+          <p>
+            The Reserve At Ochoco Is A Stunning Living Community In Prineville
+            Oregon. Discover the simplicity of modern living.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waiting List Section -->
+    <section id="waiting-list" class="waiting-list-section">
+      <div class="container">
+        <div class="form-container">
+          <h2><span class="text-theme">JOIN</span> Our Waiting List</h2>
+          <form id="waiting-list-form">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" required />
+
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="interest">What are you interested in?</label>
+            <select id="interest" name="interest" required>
+              <option value="">Select an option</option>
+              <option value="Studio">Studio</option>
+              <option value="1 Bedroom">1 Bedroom</option>
+              <option value="2 Bedroom">2 Bedroom</option>
+              <option value="2 Bedroom Deluxe">2 Bedroom Deluxe</option>
+              <option value="3 Bedroom">3 Bedroom</option>
+            </select>
+
+            <button type="submit" class="btn-theme">SEND REQUEST</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floor Plans Section -->
+    <section id="floor-plans" class="floor-plans-section">
+      <div class="container">
+        <h2>Floor Plans</h2>
+        <div class="tabs">
+          <ul class="tab-list">
+            <li class="tab-item active" data-tab="tab-1">1 Bedroom</li>
+            <li class="tab-item" data-tab="tab-2">2 Bedroom</li>
+            <li class="tab-item" data-tab="tab-3">2 Bedroom Deluxe</li>
+            <li class="tab-item" data-tab="tab-4">3 Bedroom</li>
+          </ul>
+          <div class="tab-content">
+            <div id="tab-1" class="tab-pane active">
+              <div class="tab-inner">
+                <img
+                  src="https://thereserveatochoco.com/wp-content/uploads/2023/03/1-bedroom.png"
+                  alt="1 Bedroom"
+                />
+                <p>
+                  Our charming 1-bedroom apartments blend comfort and style with
+                  modern amenities. Enjoy a cozy living space in a vibrant
+                  community, perfect for a serene lifestyle in Prineville. Your
+                  ideal home awaits!
+                </p>
+                <a href="#contact" class="btn-theme">SCHEDULE</a>
+              </div>
+            </div>
+            <div id="tab-2" class="tab-pane">
+              <div class="tab-inner">
+                <img
+                  src="https://thereserveatochoco.com/wp-content/uploads/2023/03/2-bedroom.png"
+                  alt="2 Bedroom"
+                />
+                <p>
+                  Our spacious 2-bedroom apartments are ideal for families or
+                  professionals seeking comfort. Enjoy modern amenities and a
+                  serene environment in the heart of Prineville. Your perfect
+                  home is here!
+                </p>
+                <a href="#contact" class="btn-theme">SCHEDULE</a>
+              </div>
+            </div>
+            <div id="tab-3" class="tab-pane">
+              <div class="tab-inner">
+                <img
+                  src="https://thereserveatochoco.com/wp-content/uploads/2023/03/2-bedroom-dulex.png"
+                  alt="2 Bedroom Deluxe"
+                />
+                <p>
+                  Our 2-bedroom deluxe apartments offer modern amenities,
+                  spacious layouts, and stunning views. Experience comfort and
+                  style in a vibrant community that caters to your lifestyle.
+                  Embrace the perfect blend of luxury and convenience in the
+                  heart of Prineville. Your new home awaits!
+                </p>
+                <a href="#contact" class="btn-theme">SCHEDULE</a>
+              </div>
+            </div>
+            <div id="tab-4" class="tab-pane">
+              <div class="tab-inner">
+                <img
+                  src="https://thereserveatochoco.com/wp-content/uploads/2023/03/Untitled-design.png"
+                  alt="3 Bedroom"
+                />
+                <p>
+                  Our 3-bedroom apartments offer modern amenities, spacious
+                  layouts, and stunning views. Experience comfort and style in a
+                  vibrant community that caters to your lifestyle. Embrace the
+                  perfect blend of luxury and convenience in the heart of
+                  Prineville. Your new home awaits!
+                </p>
+                <a href="#contact" class="btn-theme">SCHEDULE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <h2>BUILDING<br />FEATURES</h2>
+        <div class="features-list">
+          <div class="feature-item">
+            <img
+              src="https://thereserveatochoco.com/wp-content/uploads/2024/12/Untitled-design-1.jpg"
+              alt="24 Hour Fitness"
+            />
+            <h3>24 HOUR FITNESS</h3>
+            <p>
+              Our 24-hour fitness center is right at your doorstep! Get fit,
+              stay healthy, and enjoy the convenience of working out whenever
+              you want. Your dream apartment community just got even better!
+            </p>
+          </div>
+          <div class="feature-item">
+            <img
+              src="https://thereserveatochoco.com/wp-content/uploads/2024/12/Untitled-design-2.jpg"
+              alt="Dog Park"
+            />
+            <h3>DOG PARK</h3>
+            <p>
+              Our pet-friendly apartment community features a fantastic dog park
+              where your furry friends can run wild and make new pals!
+            </p>
+          </div>
+          <div class="feature-item">
+            <img
+              src="https://thereserveatochoco.com/wp-content/uploads/2024/12/Untitled-design-3.jpg"
+              alt="Gated Community"
+            />
+            <h3>GATED COMMUNITY</h3>
+            <p>
+              Experience the epitome of luxury living in our exclusive gated
+              apartment community. With unparalleled security and thoughtfully
+              designed spaces, your comfort and peace of mind are our top
+              priorities.
+            </p>
+          </div>
+          <div class="feature-item">
+            <img
+              src="https://thereserveatochoco.com/wp-content/uploads/2024/12/Untitled-design-4.jpg"
+              alt="Fire Pit Lounges"
+            />
+            <h3>FIRE PIT LOUNGES</h3>
+            <p>
+              Unwind and connect under the stars at our apartment community’s
+              inviting fire pit lounges. Enjoy cozy evenings filled with warmth
+              and camaraderie, creating cherished memories with friends and
+              neighbors.
+            </p>
+          </div>
+          <div class="feature-item">
+            <img
+              src="https://thereserveatochoco.com/wp-content/uploads/2024/12/Untitled-design.png"
+              alt="Luxer One Package"
+            />
+            <h3>LUXER ONE PACKAGE</h3>
+            <p>
+              Experience seamless convenience with our Luxer One package holder
+              at our apartment community. Your packages are secure, and
+              accessible, making modern living even more enjoyable!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="/">
+              <img
+                src="https://thereserveatochoco.com/wp-content/uploads/2023/03/1.png"
+                alt="The Reserve At Ochoco"
+              />
+            </a>
+          </div>
+          <p>© 2025 The Reserve At Ochoco.</p>
+          <ul class="footer-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#floor-plans">Floor Plans</a></li>
+            <li><a href="#features">Features</a></li>
+          </ul>
+          <div class="footer-icons">
+            <img
+              src="https://thereserveatochoco.com/wp-content/uploads/2024/12/Wheelchair_symbol.png"
+              alt="Wheelchair Symbol"
+              class="handicap"
+            />
+            <img
+              src="https://thereserveatochoco.com/wp-content/uploads/2024/12/6259a8a6401cd2efdaed45a8_fair-housing-logo-white.png"
+              alt="Fair Housing Logo"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container">
+      <div class="chatbot-toggle">
+        <span>💬</span>
+      </div>
+      <div class="chatbot-window">
+        <div class="chatbot-header">
+          <h3>Ask Our AI Assistant</h3>
+          <span class="chatbot-close">✖</span>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+          <div class="message bot-message">
+            Hello! I'm here to help with any questions about The Reserve At
+            Ochoco. What would you like to know?
+          </div>
+        </div>
+        <form id="chatbot-form" class="chatbot-input">
+          <input
+            type="text"
+            id="chatbot-input"
+            placeholder="Type your message..."
+            required
+          />
+          <button type="submit" class="btn-theme">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
