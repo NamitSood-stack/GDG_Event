@@ -63,7 +63,7 @@ const chatbotInput = document.getElementById('chatbot-input');
 const chatbotMessages = document.getElementById('chatbot-messages');
 
 // Gemini API Key (Note: This should be in a backend for security in production)
-const apiKey = "AIzaSyAupBZqKdH5PopmVq3Bm1cLmsMiQ7g_3MY";
+const apiKey = "";
 let userName = null;
 let conversationStarted = false;
 
